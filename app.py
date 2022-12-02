@@ -14,4 +14,4 @@ def get_token_for_dnevnik():
     else:
         return {"message":"Use POST request"}
 
-app.run()
+app.run(host="0.0.0.0")

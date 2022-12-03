@@ -16,5 +16,8 @@ def get_token(login, password):
     button = driver.find_element(By.XPATH, '//*[@id="bind"]')
     button.click()
     time.sleep(1)
-    return driver.get_cookie("aupd_token")["value"]
+    data = driver.get_cookie("aupd_token")
+    print(data)
     driver.close()
+    return data
+    
